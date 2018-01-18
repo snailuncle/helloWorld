@@ -1,6 +1,7 @@
 console.show();
 print('………………');
 var o = new Object();
+//hellogithub
 // alert(obj.username);
 // obj.username = "allen";
 // alert(obj.username);
