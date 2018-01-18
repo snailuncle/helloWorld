@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function createFunctions() {
+            var result = new Array();
+            for (var i = 0; i < 10; i++) {
+                result[i] = function (num) {
+                    return function(){
+                        return num;
+                    }
+                }(i);
+                document.write(i);
+                document.write(result[i]);
+                document.write("<br />");
+            }
+        }
+
+        function getNowFormatDate() {
+            var date = new Date();
+            var seperator1 = "-";
+            var seperator2 = ":";
+            var month = date.getMonth() + 1;
+            var strDate = date.getDate();
+            if (month >= 1 && month <= 9) {
+                month = "0" + month;
+            }
+            if (strDate >= 0 && strDate <= 9) {
+                strDate = "0" + strDate;
+            }
+            var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate +
+                " " + date.getHours() + seperator2 + date.getMinutes() +
+                seperator2 + date.getSeconds();
+            return currentdate;
+        }
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // var firstname;
+        // firstname = "George";
+        // document.write(firstname);
+        // document.write("<br />");
+        // firstname = "John";
+        // document.write(firstname);
+        // var name="The Window";
+        // var object={
+        //     name:"My Object",
+        //     getNameFunc:function(){
+                
+        //             return this.name;
+                
+
+        //     }
+        // }
+        // document.write((object.getNameFunc=object.getNameFunc)());
+        // function outputNumbers(count){
+        //     (function (){
+        //         for(var i=0;i<count;i++){
+        //         // alert(i);
+        //         var i;
+                
+        //         document.write(i);
+        //     }
+
+        //     })();
+          
+            
+        // }
+        // outputNumbers(10);
+        // 
+        // (function(){
+        //     var name="";
+        //     Person=function(value){
+        //         name=value;
+        //     };
+        //     Person.prototype.getName=function(){
+        //         return name;
+        //     };
+        //     Person.prototype.setName=function(value){
+        //         name=value;
+        //     }
+        // })();
+        // var person1=new Person("Nicholas");
+        // document.write(person1.getName());
+        // document.write("<br />");
+        // person1.setName("Greg");
+        // document.write(person1.getName());
+        // document.write("<br />");
+
+        // var person2=new Person("Michael");
+        // document.write(person1.getName());
+        // document.write("<br />")
+        // document.write(person2.getName());
+        var singleton={
+            name:value,
+            method:function(){
+                
+            }
+        }
+        document.write("<br />")
+        
+
+
+        // createFunctions();
+        document.write(getNowFormatDate());
+    </script>
+
+</body>
+
+</html>
