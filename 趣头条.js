@@ -1,4 +1,4 @@
-//                 消除空行           ^[ \t]*\n
+//        git         消除空行           ^[ \t]*\n
 "auto";
 openConsole();
 // var ra = null;
