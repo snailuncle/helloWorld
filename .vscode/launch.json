@@ -42,7 +42,7 @@
                 "console": "internalConsole",
                 "preLaunchTask": "",
                 "sourceMaps": false,
-                "outDir": null
+                "outFiles": null
         }
         
     ]
